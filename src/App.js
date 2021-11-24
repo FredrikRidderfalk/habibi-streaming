@@ -16,7 +16,10 @@ export function App() {
           <p>I will be the browse page</p>
         </Route>
         <Route path="/">
-          <p>I am going to be a cloned Netflix application</p>
+          <p>
+            I am going to be the best ever streaming platform, kind of like
+            Netflix, but only featuring wholesomeness for my habibi
+          </p>
         </Route>
       </Switch>
     </Router>
