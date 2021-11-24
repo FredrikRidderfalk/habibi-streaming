@@ -6,16 +6,16 @@ export function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/sigi">
+        <Route path="/signin">
           <p>I will be the sign in page</p>
         </Route>
-        <Route path="/signin">
+        <Route path="/signup">
           <p>I will be the sign up page</p>
         </Route>
         <Route path="/browse">
-          <p>I will be the browse page</p>
+          <p>I will be the browse page, also known as the home page</p>
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <p>
             I am going to be the best ever streaming platform, kind of like
             Netflix, but only featuring wholesomeness for my habibi
