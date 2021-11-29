@@ -12,21 +12,21 @@ export function seedDatabase(firebase) {
   // Documentaries
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Tiger King",
+    title: "Planet Earth",
     description:
-      "An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.",
+      "Emmy Award-winning, 11 episodes, five years in the making, the most expensive nature documentary series ever commissioned by the BBC, and the first to be filmed in high definition.",
     genre: "documentaries",
-    maturity: "18",
+    maturity: "12",
     slug: "tiger-king",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Amanda Knox",
+    title: "My Octopus Teacher",
     description:
-      "Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.",
+      "A filmmaker forges an unusual friendship with an octopus living in a South African kelp forest, learning as the animal shares the mysteries of her world.",
     genre: "documentaries",
     maturity: "12",
-    slug: "amanda-knox",
+    slug: "my-octopus-teacher",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
