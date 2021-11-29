@@ -17,9 +17,9 @@ export function seedDatabase(firebase) {
       "Emmy Award-winning, 11 episodes, five years in the making, the most expensive nature documentary series ever commissioned by the BBC, and the first to be filmed in high definition.",
     genre: "documentaries",
     maturity: "12",
-    slug: "tiger-king",
+    slug: "planet-earth",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "My Octopus Teacher",
     description:
@@ -30,50 +30,50 @@ export function seedDatabase(firebase) {
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Citizenfour",
+    title: "Street Food: Asia",
     description:
-      "Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.",
+      "Embark on a global cultural journey into street food and discover the stories of the people who create the flavorful dishes.",
     genre: "documentaries",
     maturity: "12",
-    slug: "citizenfour",
+    slug: "street-food-asia",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Super Size Me",
+    title: "High Score",
     description:
-      "Director Morgan Spurlock's social experiment in fast-food gastronomy sees him attempting to subsist uniquely on food from the McDonalds",
+      "Traces the history of classic video games, featuring insights from the innovators who brought these worlds and characters to life.",
     genre: "documentaries",
     maturity: "12",
-    slug: "super-size-me",
+    slug: "high-score",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Man on Wire",
+    title: "Our Planet",
     description:
-      "Filmmaker James Marsh masterfully recreates high-wire daredevil Philippe Petit's 1974 stunt walking on a wire across the Twin Towers.",
+      "Experience our planet's natural beauty and examine how climate change impacts all living creatures in this ambitious documentary of spectacular scope.",
     genre: "documentaries",
     maturity: "12",
-    slug: "man-on-wire",
+    slug: "our-planet",
   });
 
   // Comedies
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "The Office",
+    title: "Emily in Paris",
     description:
-      "A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.",
+      "A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with an American perspective on things.",
     genre: "comedies",
-    maturity: "15",
-    slug: "the-office",
+    maturity: "12",
+    slug: "emily-in-paris",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Arrested Development",
+    title: "Brooklyn Nine-Nine",
     description:
-      "The Bluth family, once a prominent name in the business, loses everything after the head patriarch gets convicted for fraud.",
+      "Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.",
     genre: "comedies",
-    maturity: "15",
-    slug: "arrested-development",
+    maturity: "12",
+    slug: "brooklyn-nine-nine",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
@@ -86,21 +86,21 @@ export function seedDatabase(firebase) {
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Family Guy",
+    title: "Kim's Convenience",
     description:
-      "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+      "While running a convenience store in Toronto, members of a Korean-Canadian family deal with customers, each other and the evolving world around them.",
     genre: "comedies",
     maturity: "15",
-    slug: "family-guy",
+    slug: "kims-convenience",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "South Park",
+    title: "Community",
     description:
-      "Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.",
+      "When his bogus law degree is exposed, Jeff Winger goes back to college and forms a study group of outcasts.",
     genre: "comedies",
-    maturity: "15",
-    slug: "south-park",
+    maturity: "12",
+    slug: "community",
   });
 
   // Children
@@ -150,40 +150,40 @@ export function seedDatabase(firebase) {
     slug: "spongebob",
   });
 
-  // Crime
+  // Animated
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Making a Murderer",
+    title: "Food Wars",
     description:
-      "Exonerated after spending nearly two decades in prison for a crime he did not commit, Steven Avery filed suit against Manitowoc County, Wis., and several individuals involved with his arrest.",
-    genre: "crime",
-    maturity: "18",
-    slug: "making-a-murderer",
+      "Soma Yukihira enrolls in an elite culinary school to become a full-time chef and surpass his father's culinary skills.",
+    genre: "animated",
+    maturity: "12",
+    slug: "food-wars",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "Long Shot",
+    title: "A Place Further Than The Universe",
     description:
-      "An innocent man is accused of murder, leading his attorney on a wild chase to confirm his alibi using raw footage from a television show.",
-    genre: "crime",
-    maturity: "18",
-    slug: "long-shot",
+      "A group of high school girls join an expedition headed towards the Antarctic.",
+    genre: "animated",
+    maturity: "12",
+    slug: "a-place-further-than-the-universe",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
-    title: "The Confession Killer",
+    title: "The Great British Bake Off",
     description:
-      "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson, although his sentence would be commuted to life in prison in 1998.",
-    genre: "crime",
-    maturity: "18",
-    slug: "the-confession-killer",
+      "The Great British Bake Off is the ultimate baking battle where passionate amateur baking fans compete to be crowned the UK's Best Amateur Baker.",
+    genre: "animated",
+    maturity: "12",
+    slug: "the-great-british-bake-off",
   });
   firebase.firestore().collection("series").add({
     id: getUUID(),
     title: "The Innocent Man",
     description:
-      "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.",
-    genre: "crime",
+      "Henry Lee Lucas was an American convicted serial killer whose animateds spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.",
+    genre: "animated",
     maturity: "18",
     slug: "the-innocent-man",
   });
@@ -192,7 +192,7 @@ export function seedDatabase(firebase) {
     title: "The Staircase",
     description:
       "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
-    genre: "crime",
+    genre: "animated",
     maturity: "18",
     slug: "the-staircase",
   });
