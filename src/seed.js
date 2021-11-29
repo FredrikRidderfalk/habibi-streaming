@@ -174,31 +174,31 @@ export function seedDatabase(firebase) {
     title: "The Great British Bake Off",
     description:
       "The Great British Bake Off is the ultimate baking battle where passionate amateur baking fans compete to be crowned the UK's Best Amateur Baker.",
-    genre: "animated",
+    genre: "feel-good",
     maturity: "12",
     slug: "the-great-british-bake-off",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Innocent Man",
+    title: "Big Hero 6",
     description:
-      "Henry Lee Lucas was an American convicted serial killer whose animateds spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.",
-    genre: "animated",
-    maturity: "18",
-    slug: "the-innocent-man",
+      "A special bond develops between plus-sized inflatable robot Baymax and prodigy Hiro Hamada, who together team up with a group of friends to form a band of high-tech heroes.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "big-hero-6",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Staircase",
+    title: "Next Gen",
     description:
-      "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
-    genre: "animated",
-    maturity: "18",
-    slug: "the-staircase",
+      "A friendship with a top-secret robot turns a lonely girl's life into a thrilling adventure as they take on bullies, evil bots and a scheming madman.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "next-gen",
   });
 
   // Feel-good
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "Good Will Hunting",
     description:
@@ -207,7 +207,7 @@ export function seedDatabase(firebase) {
     maturity: "12",
     slug: "good-will-hunting",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "Forrest Gump",
     description:
@@ -216,7 +216,7 @@ export function seedDatabase(firebase) {
     maturity: "12",
     slug: "forrest-gump",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "Juno",
     description:
@@ -225,7 +225,7 @@ export function seedDatabase(firebase) {
     maturity: "12",
     slug: "juno",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "Midnight In Paris",
     description:
@@ -234,7 +234,7 @@ export function seedDatabase(firebase) {
     maturity: "12",
     slug: "midnight-in-paris",
   });
-  firebase.firestore().collection("series").add({
+  firebase.firestore().collection("films").add({
     id: getUUID(),
     title: "School of Rock",
     description:
@@ -249,95 +249,95 @@ export function seedDatabase(firebase) {
   // Drama
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Prestige",
+    title: "Enola Holmes",
     description:
-      "Two friends and fellow magicians become bitter enemies after a sudden tragedy. As they devote themselves to this rivalry, they make sacrifices that bring them fame but with terrible consequences.",
+      "When Enola Holmes-Sherlock's teen sister-discovers her mother missing, she sets off to find her, becoming a super-sleuth in her own right as she outwits her famous brother and unravels a dangerous conspiracy around a mysterious young Lord.",
     genre: "drama",
     maturity: "15",
-    slug: "the-prestige",
+    slug: "enola-holmes",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Fight Club",
+    title: "Notting Hill",
     description:
-      "Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.",
+      "The life of a simple bookshop owner changes when he meets the most famous film star in the world.",
     genre: "drama",
     maturity: "15",
-    slug: "fight-club",
+    slug: "notting-hill",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Kings Speech",
+    title: "The Birdcage",
     description:
-      "King George VI tries to overcome his stammering problem with the help of speech therapist Lionel Logue and makes himself worthy enough to lead his country through World War II.",
+      "A gay cabaret owner and his drag queen companion agree to put up a false straight front so that their son can introduce them to his fiancée's right-wing moralistic parents.",
     genre: "drama",
     maturity: "15",
-    slug: "kings-speech",
+    slug: "the-birdcage",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Revenant",
+    title: "Legally Blonde",
     description:
-      "Hugh Glass, a legendary frontiersman, is severely injured in a bear attack and is abandoned by his hunting crew. He uses his skills to survive and take revenge on his companion, who betrayed him.",
+      "Elle Woods, a fashionable sorority queen, is dumped by her boyfriend. She decides to follow him to law school. While she is there, she figures out that there is more to her than just looks.",
     genre: "drama",
     maturity: "15",
-    slug: "the-revenant",
+    slug: "legally-blonde",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Social Network",
+    title: "Mamma Mia!",
     description:
-      "Mark Zuckerberg creates a social networking site, Facebook, with the help of his friend Eduardo Saverin. But soon, a string of lies tears their relationship apart even as Facebook connects people.",
+      "The story of a bride-to-be trying to find her real father told using hit songs by the popular 1970s group ABBA.",
     genre: "drama",
     maturity: "12",
-    slug: "the-social-network",
+    slug: "mamma-mia!",
   });
 
-  // Suspense
+  // Adventure
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Shutter Island",
+    title: "Troop Zero",
     description:
-      "Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.",
-    genre: "suspense",
-    maturity: "15",
-    slug: "shutter-island",
+      "In rural 1977 Georgia, a misfit girl dreams of life in outer space. When a competition offers her a chance to be recorded on NASA's Golden Record, she recruits a makeshift troop of Birdie Scouts, forging friendships that last a lifetime.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "troop-zero",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Gone Girl",
+    title: "How To Train Your Dragon",
     description:
-      "Nick Dunne discovers that the entire media focus has shifted on him when his wife Amy Dunne disappears on the day of their fifth wedding anniversary.",
-    genre: "suspense",
-    maturity: "15",
-    slug: "gone-girl",
+      "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "how-to-train-your-dragon",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Prisoners",
+    title: "Raya and the Last Dragon",
     description:
-      "When the police take time to find Keller Dover's daughter and her friend, he decides to go on a search himself. His desperation leads him closer to finding the truth and also jeopardises his own life.",
-    genre: "suspense",
-    maturity: "15",
-    slug: "prisoners",
+      "In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "raya-and-the-last-dragon",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Seven",
+    title: "Moana",
     description:
-      "A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with apprehending the criminal.",
-    genre: "suspense",
-    maturity: "15",
-    slug: "seven",
+      "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "moana",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Zodiac",
+    title: "Pirates of the Caribbean",
     description:
-      "Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer. He uses his puzzle-solving abilities to get closer to revealing the identity of the killer.",
-    genre: "suspense",
-    maturity: "15",
-    slug: "zodiac",
+      "Blacksmith Will Turner teams up with eccentric pirate Captain Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+    genre: "adventure",
+    maturity: "12",
+    slug: "pirates-of-the-caribbean",
   });
 
   // Children
@@ -387,51 +387,51 @@ export function seedDatabase(firebase) {
     slug: "up",
   });
 
-  // Thriller
+  // Family
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Joker",
+    title: "The Karate Kid",
     description:
-      "Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.",
-    genre: "thriller",
-    maturity: "15",
-    slug: "joker",
+      "A martial arts master agrees to teach karate to a bullied teenager.",
+    genre: "family",
+    maturity: "12",
+    slug: "the-karate-kid",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "A Quiet Place",
+    title: "The Spy Next Door",
     description:
-      "The Abbott family must now face the terrors of the outside world as they fight for survival in silence. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path.",
-    genre: "thriller",
-    maturity: "15",
-    slug: "a-quiet-place",
+      "Former C.I.A. spy Bob Ho takes on his toughest assignment to date: looking after his girlfriend's three kids, who haven't exactly warmed to their mom's beau.",
+    genre: "family",
+    maturity: "12",
+    slug: "the-spy-next-door",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Black Swan",
+    title: "Coco",
     description:
-      "Nina, a ballerina, gets the chance to play the White Swan, Princess Odette. But she finds herself slipping into madness when Thomas, the artistic director, decides that Lily might fit the role better.",
-    genre: "thriller",
-    maturity: "15",
-    slug: "black-swan",
+      "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+    genre: "family",
+    maturity: "12",
+    slug: "coco",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Nightcrawler",
+    title: "Happy Feet",
     description:
-      "Louis Bloom, a petty thief, realises that he can make money by capturing photographs of criminal activities and starts resorting to extreme tactics to get them.",
-    genre: "thriller",
-    maturity: "15",
-    slug: "nightcrawler",
+      "Into the world of the Emperor Penguins, who find their soul mates through song, a penguin is born who cannot sing. But he can tap dance something fierce!",
+    genre: "family",
+    maturity: "12",
+    slug: "happy-feet",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Silence of The Lambs",
+    title: "Zootopia",
     description:
-      "Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.",
-    genre: "thriller",
-    maturity: "15",
-    slug: "the-silence-of-the-lambs",
+      "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+    genre: "family",
+    maturity: "12",
+    slug: "zootopia",
   });
 
   // Romance
@@ -441,17 +441,17 @@ export function seedDatabase(firebase) {
     description:
       "After falling in love with struggling artist Ally, Jackson, a musician, coaxes her to follow her dreams, while he battles with alcoholism and his personal demons.",
     genre: "romance",
-    maturity: "15",
+    maturity: "12",
     slug: "a-star-is-born",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Blue Valentine",
+    title: "Your Name",
     description:
-      "Dean and Cynthia are married with a daughter and their marriage is about to fall apart. Both come from dysfunctional families and struggle to make sense of their relationship.",
+      "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
     genre: "romance",
-    maturity: "15",
-    slug: "blue-valentine",
+    maturity: "12",
+    slug: "your-name",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
@@ -459,25 +459,25 @@ export function seedDatabase(firebase) {
     description:
       "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin...",
     genre: "romance",
-    maturity: "15",
+    maturity: "12",
     slug: "la-la-land",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "The Notebook",
+    title: "Love Actually",
     description:
-      "Duke reads the story of Allie and Noah, two lovers who were separated by fate, to Ms Hamilton, an old woman who suffers from Alzheimer's, on a daily basis out of his notebook.",
+      "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
     genre: "romance",
-    maturity: "15",
-    slug: "the-notebook",
+    maturity: "12",
+    slug: "love-actually",
   });
   firebase.firestore().collection("films").add({
     id: getUUID(),
-    title: "Titanic",
+    title: "Words Bubble Up Like Soda Pop",
     description:
-      "Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.",
+      "A meeting and romance starts between two people with communication issues - a boy who wears headphones and uses haiku poems, and a shy girl who wears a mask and only does online videos.",
     genre: "romance",
-    maturity: "15",
-    slug: "titanic",
+    maturity: "12",
+    slug: "words-bubble-up-like-soda-pop",
   });
 }
