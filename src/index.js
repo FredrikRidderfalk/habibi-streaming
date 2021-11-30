@@ -4,10 +4,13 @@ import { GlobalStyles } from "./global-styles";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { FirebaseContext } from "./context/firebase";
+import { initializeApp } from "firebase/app";
+// import { seedDatabase } from "./seed";
 
 const config = {
   apiKey: "AIzaSyCK8KhTKjSP-M6Fg2YMg3Hqm_EayNb2_tE",
   authDomain: "habibi-streaming.firebaseapp.com",
+  databaseURL: "https://habibi-streaming.firebaseio.com",
   projectId: "habibi-streaming",
   storageBucket: "habibi-streaming.appspot.com",
   messagingSenderId: "212948137795",
